@@ -7,6 +7,8 @@ export default React.createClass({
       <form>
         <input className="teacher_login" placeholder=" Teacher Sign In" type="text"/>
         <button className="submit_button" type="submit"> Login </button>
+        <input className="student_login" placeholder=" Student Sign In" type="text"/>
+        <button className="submit_button" type="submit"> Login </button>
       </form>
     )
   }
