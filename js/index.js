@@ -10,9 +10,6 @@ render(
     <Router history={hashHistory}>
       <Route component={App}>
         <Route path="/" component={ Home }/>
-        <Route path="/resume" component={ Resume }/>
-        <Route path="/post" component={ Post }/>
-        <Route path="projects" component={ Projects }/>
       </Route>
     </Router>
   ),
