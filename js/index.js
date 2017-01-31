@@ -3,9 +3,7 @@ import { render } from 'react-dom'
 import { Router, Route, hashHistory} from 'react-router'
 import App from './App'
 import Home from './Home'
-import Resume from './Resume'
-import Post from './Post'
-import Projects from './Projects'
+
 
 render(
   (
