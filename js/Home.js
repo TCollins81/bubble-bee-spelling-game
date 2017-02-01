@@ -7,6 +7,7 @@ import { Link } from 'react-router'
 export default React.createClass({
   render() {
     return (
+      
       <div id="login_wrapper">
         <form name="login_form"
               className="login_form"
