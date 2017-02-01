@@ -5,7 +5,7 @@ export default React.createClass({
   render() {
     return (
       <footer className="page_footer">
-        <h3>Copyright 2017</h3>
+        <h3></h3>
       </footer>
     )
   }

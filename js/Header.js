@@ -5,7 +5,6 @@ export default React.createClass({
   render() {
     return (
       <header className="title">
-        <img src="styles/Bubble-Bee.png" alt="" className="Bubble-Bee-Image"/>
         <nav className="links">
           <Link to="/" className="home"></Link>
         </nav>
@@ -14,6 +13,7 @@ export default React.createClass({
   }
 })
 
+// <img src="styles/Bubble-Bee.png" alt="" className="Bubble-Bee-Image"/>
 
 // <Link to="/post" className="post">Blog</Link>
 // <Link to="/projects" className="projects">Projects</Link>
