@@ -9,15 +9,15 @@ export default React.createClass({
     return (
 
       <div>
-        
+
         <section id="login_wrapper">
           <form name="login_form"
                 className="login_form"
                 action=""
                 method="post">
             <div className="header">
-              <h1>Login Form</h1>
-              <span>Fill out the form below to login
+              <h1>Registration Form</h1>
+              <span>Teachers enter last name and grade level <br /> (Ex: SmithFirstGrade)
               </span>
             </div>
 
