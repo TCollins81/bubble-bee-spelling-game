@@ -53,11 +53,14 @@ export default React.createClass({
                     name="submit"
                     value="Login"
                     type="text"/>
-                  <input
-                    className="register"
-                    name="submit"
-                    value="Register"
-                    type="submit" />
+
+
+                    <Link to="/register"
+                      className="register"
+                      name="submit"
+                      value="Register"
+                      type="submit">Register</Link>
+
                 </div>
               </form>
             </section>
@@ -67,7 +70,7 @@ export default React.createClass({
 
 
 
-// ------------THIS IS THE CODE FOR THE LOGIN FORM ON HOME PAGE ------------
+
 
 
 

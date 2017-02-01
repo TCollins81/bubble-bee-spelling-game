@@ -52,6 +52,7 @@ body {
   padding: 10px 40px;
   border-radius: 13px;
   margin-left: 12px;
+  font-size: x-large;
 }
 
 .input_password {
@@ -62,6 +63,8 @@ body {
   padding: 10px 40px;
   border-radius: 13px;
   margin-left: 12px;
+  font-size: x-large;
+
 }
 
 .button {
