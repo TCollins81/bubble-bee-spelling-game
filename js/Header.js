@@ -13,7 +13,6 @@ export default React.createClass({
   }
 })
 
-// <img src="styles/Bubble-Bee.png" alt="" className="Bubble-Bee-Image"/>
 
 // <Link to="/post" className="post">Blog</Link>
 // <Link to="/projects" className="projects">Projects</Link>
