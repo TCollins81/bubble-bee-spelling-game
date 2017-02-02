@@ -8,7 +8,7 @@ export default React.createClass({
   render() {
     return (
       <div id="clouds">
-        <img src="styles/Bubble-Bee.png" alt="" className="Bubble-Bee-Image"/>
+        <img src="styles/teachers-rule.png" alt="" className="teachers-rule-Image"/>
 
       	<div className="cloud x1"></div>
 
@@ -23,7 +23,7 @@ export default React.createClass({
                     action=""
                     method="post">
                 <div className="header">
-                  <h1>Registration Here!</h1>
+                  <h1>Register Here!</h1>
                   <span>Teachers enter last name and grade level <br /> (Ex: SmithFirstGrade)
                   </span>
                 </div>
