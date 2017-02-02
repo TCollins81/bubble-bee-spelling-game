@@ -23,7 +23,7 @@ export default React.createClass({
                     action=""
                     method="post">
                 <div className="header">
-                  <h1>Registration Form</h1>
+                  <h1>Registration Here!</h1>
                   <span>Teachers enter last name and grade level <br /> (Ex: SmithFirstGrade)
                   </span>
                 </div>
