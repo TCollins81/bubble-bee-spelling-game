@@ -66,15 +66,6 @@ export default React.createClass({
             </section>
           </div>
       </div>
-// ---------- CLOUDS CODE ENDS HERE ----------------------------
-
-
-
-
-
-
-
-
     )
   }
 })
