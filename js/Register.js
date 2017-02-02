@@ -50,7 +50,7 @@ export default React.createClass({
                 <div className="footer">
 
                   <Link to="/teacher"
-                      className="register"
+                      className="teachers-unite"
                       name="submit"
                       value="Register"
                       type="submit">Teachers Unite!</Link>
