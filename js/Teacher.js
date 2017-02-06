@@ -16,8 +16,8 @@ export default React.createClass({
                 action=""
                 method="post">
             <div className="header">
-              <h1>Registration Form</h1>
-              <span>Teachers enter last name and grade level <br /> (Ex: SmithFirstGrade)
+              <h1>Word Input Form</h1>
+              <span>Teachers enter list of words <br /> this grade level struggles with most.
               </span>
             </div>
 
