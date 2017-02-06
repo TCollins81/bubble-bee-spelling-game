@@ -52,7 +52,7 @@ export default React.createClass({
                   className="register"
                   name="submit"
                   value="Register"
-                  type="submit">Teachers Register</Link>
+                  type="submit">Teachers Reggister</Link>
 
             </div>
           </form>
