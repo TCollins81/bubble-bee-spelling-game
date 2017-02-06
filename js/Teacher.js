@@ -7,9 +7,7 @@ import { Link } from 'react-router'
 export default React.createClass({
   render() {
     return (
-
       <div>
-
         <section id="login_wrapper">
           <form name="login_form"
                 className="login_form"
@@ -52,19 +50,12 @@ export default React.createClass({
                   className="register"
                   name="submit"
                   value="Register"
-                  type="submit">Teachers Reggister</Link>
+                  type="submit">Teachers Register</Link>
 
             </div>
           </form>
         </section>
       </div>
-
-
-
-
-
-
-
     )
   }
 })
