@@ -19,6 +19,15 @@ export default React.createClass({
               <div className="bubble xx10"></div>
             </div>
 
+            <div>
+              <div className="cloud x1"></div>
+              <div className="cloud x2"></div>
+              <div className="cloud x3"></div>
+              <div className="cloud x4"></div>
+              <div className="cloud x5"></div>
+
+            </div>
+
       </section>
     )
   }

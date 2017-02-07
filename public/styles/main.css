@@ -134,10 +134,16 @@ body {
 
 #clouds{
 	padding: -300px 0;
-	background: #c9dbe9;
-	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
-	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: #00B5F3;
+	background: -webkit-linear-gradient(top, #00B5F3 0%, #fff 100%);
+	background: -linear-gradient(top, #00B5F3 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #00B5F3 0%, #fff 100%);
+  color: #210;
+  font: 100% Lato, Arial, Sans Serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /*Time to finalise the cloud shape*/
@@ -255,6 +261,9 @@ body {
 color: #333;*/
 body {
   background: #00B5F3;
+  background: -webkit-linear-gradient(top, #00B5F3 0%, #fff 100%);
+	background: -linear-gradient(top, #00B5F3 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #00B5F3 0%, #fff 100%);
   color: #210;
 	font: 100% Lato, Arial, Sans Serif;
 	height: 100vh;
