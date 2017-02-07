@@ -5,7 +5,7 @@ export default React.createClass({
   render() {
     return (
       <div id="clouds">
-        <img src="styles/teachers-rule.png" alt="" className="teachers-rule-Image"/>
+        <img src="styles/enter-words.png" alt="" className="enter-words-Image"/>
         <div className="cloud x1"></div>
         <div className="cloud x2"></div>
         <div className="cloud x3"></div>
