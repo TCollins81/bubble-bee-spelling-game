@@ -1,12 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router'
 
-// Created form for login for teachers as they are going to need to login seperately so they can go to the teacher portal page where they will be prompted to enter words and grade level for game
-
-// Created form for login for students as they are going to login with the i.d that the teacher provides them
 export default React.createClass({
   render() {
     return (
+      <div id="clouds">
+        <img src="styles/teachers-rule.png" alt="" className="teachers-rule-Image"/>
+        <div className="cloud x1"></div>
+        <div className="cloud x2"></div>
+        <div className="cloud x3"></div>
+        <div className="cloud x4"></div>
+        <div className="cloud x5"></div>
+
       <div>
         <section id="login_wrapper">
           <form name="login_form"
@@ -46,7 +51,7 @@ export default React.createClass({
                 type="text"/>
 
 
-              <Link to="/teacher"
+              <Link to="/game"
                   className="register"
                   name="submit"
                   value="Register"
@@ -56,6 +61,8 @@ export default React.createClass({
           </form>
         </section>
       </div>
+    </div>
+
     )
   }
 })

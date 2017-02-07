@@ -1,17 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router'
-
-// Created form for login for teachers as they are going to need to login seperately so they can go to the teacher portal page where they will be prompted to enter words and grade level for game
-
-// Created form for login for students as they are going to login with the i.d that the teacher provides them
+// [x] - Create input box for user name and password
+// [x] - Create login for users
+// [x] - Create registration for new users
+// [x] - Create link for registration to teachers portal (new users page)
 export default React.createClass({
   render() {
     return (
       <div id="clouds">
         <img src="styles/Bubble-Bee.png" alt="" className="Bubble-Bee-Image"/>
-
       	<div className="cloud x1"></div>
-
       	<div className="cloud x2"></div>
       	<div className="cloud x3"></div>
       	<div className="cloud x4"></div>
@@ -27,7 +25,6 @@ export default React.createClass({
                   <span>Fill out the form below to login
                   </span>
                 </div>
-
                 <div className="content">
                   <input
                     className="input_username"
@@ -36,7 +33,6 @@ export default React.createClass({
                     type="text"/>
                   <div className="user_icon">
                     </div>
-
                   <input
                     name="password"
                     type="password"
@@ -46,21 +42,18 @@ export default React.createClass({
                     className="pass_icon">
                   </div>
                 </div>
-
                 <div className="footer">
                   <input
                     className="button"
                     name="submit"
                     value="Login"
                     type="text"/>
-
-
                     <Link to="/register"
                       className="register"
                       name="submit"
                       value="Register"
-                      type="submit">Register</Link>
-
+                      type="submit">Register
+                    </Link>
                 </div>
               </form>
             </section>
