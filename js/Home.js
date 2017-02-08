@@ -43,11 +43,17 @@ export default React.createClass({
                   </div>
                 </div>
                 <div className="footer">
-                  <input
-                    className="button"
-                    name="submit"
-                    value="Login"
-                    type="text"/>
+                    <Link to="/game"
+                          className="#"
+                          name="#"
+                          value="#"
+                          type="#">
+                      <input
+                        className="button"
+                        name="submit"
+                        value="Login"
+                        type="text"/>
+                    </Link>
                     <Link to="/register"
                       className="register"
                       name="submit"
