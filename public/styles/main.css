@@ -476,6 +476,59 @@ body {
   	transform: scale(0.3);
 }
 
+.xx11 {
+  -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 65%;
+	top: 80%;
+
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+
+}
+
+.xx12 {
+  -webkit-animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  -moz-animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+  left: 70%;
+  top: 80%;
+
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+}
+
+.xx13 {
+  -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 20%;
+	top: 80%;
+
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.xx14 {
+  -webkit-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 24s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+	left: 80%;
+	top: 10%;
+
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
 /* OBJECTS */
 
 .bubble {
@@ -514,4 +567,18 @@ body {
 	  left: 10px;
 	  position: absolute;
 	  width: 180px;
+}
+
+.letter {
+  text-align: center;
+  font-size: 9em;
+  position: absolute;
+  z-index: 2;
+  margin-left: 27%;
+  margin-top: 20%;
+  margin-right: 30%;
+  margin-bottom: 10%;
+  color: pink;
+  font-weight: bold;
+}
 }
