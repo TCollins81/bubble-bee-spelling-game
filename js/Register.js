@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 
 export default React.createClass({
   render() {
+    console.log("What page is this")
     return (
       <div id="clouds">
         <img src="styles/teachers-rule.png" alt="" className="teachers-rule-Image"/>

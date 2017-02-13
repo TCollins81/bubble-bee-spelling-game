@@ -2,6 +2,19 @@ import React from 'react'
 import { Link } from 'react-router'
 
 export default React.createClass({
+  getInitialState(){
+    return{
+      words: []
+    }
+  },
+  onFormChange(e) {
+    var newWord = e.target.value
+  },
+  onWordSubmit(){
+    this.setState({
+      words: newWord
+    })
+  },
   render() {
     return (
       <div id="clouds">
@@ -14,7 +27,8 @@ export default React.createClass({
 
       <div>
         <section id="login_wrapper">
-          <form name="login_form"
+          <div
+                name="login_form"
                 className="login_form"
                 action=""
                 method="post">
@@ -23,42 +37,46 @@ export default React.createClass({
               <span>Teachers enter list of words <br /> this grade level struggles with most.
               </span>
             </div>
-
             <div className="content">
-              <input
-                className="input_username"
-                name="username"
-                placeholder="Username"
-                type="text"/>
-              <div className="user_icon">
-                </div>
+              <form>
+                <input  ref= "wordInput" onChange={this.onFormChange}
+                  className="input_username"
+                  name="teacher words"
+                  placeholder="Input words"
+                  type="text"/>
 
-              <input
-                name="password"
-                type="password"
-                className="input_password"
-                placeholder="Password"/>
+                <ul>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                  <li className="words_list"><input className="words_input_box"/></li>
+                </ul>
+
+
+              </form>
               <div
                 className="pass_icon">
               </div>
             </div>
 
             <div className="footer">
-              <input
-                className="button"
-                name="submit"
-                value="Login"
-                type="text"/>
+
 
 
               <Link to="/game"
-                  className="register"
+                  className="teachers-unite"
                   name="submit"
                   value="Register"
-                  type="submit">Teachers Register</Link>
+                  type="submit">PLAY GAME</Link>
 
             </div>
-          </form>
+          </div>
         </section>
       </div>
     </div>

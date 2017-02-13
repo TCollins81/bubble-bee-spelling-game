@@ -26,8 +26,8 @@ body {
 
 
 .login_form {
-  margin-left: 36%;
-  width: 25%;
+  margin-left: 24%;
+  width: 52%;
   height: 30%;
   margin: 0 auto:
   position: relative;
@@ -52,25 +52,25 @@ body {
 }
 
 .input_username {
-  width: 65%;
+  width: 50%;
   height: 5%;
   text-align: center;
   border: 2px solid #a1a1a1;
   padding: 10px 40px;
   border-radius: 13px;
-  margin-left: 12px;
+  margin-left: 19%;
   font-size: x-large;
   background-color: transparent;
 }
 
 .input_password {
-  width: 65%;
+  width: 50%;
   height: 5%;
   text-align: center;
   border: 2px solid #a1a1a1;
   padding: 10px 40px;
   border-radius: 13px;
-  margin-left: 12px;
+  margin-left: 19%;
   font-size: x-large;
   margin-bottom: 25px;
   background-color: transparent;
@@ -126,12 +126,13 @@ body {
   background: #56c2e1;
   border: 1px solid #46b3d3;
   border-radius: 5px;
-  margin-left: 66px;
+  margin-left: 70px;
   text-decoration: none;
 }
 
 .footer {
   display: inline-block;
+  margin-left: 27%;
 }
 
 .page_footer {
@@ -581,4 +582,13 @@ body {
   color: pink;
   font-weight: bold;
 }
+
+.words_list {
+  list-style-position: outside;
+  list-style: none;
+  text-align: center;
+}
+
+.words_input_box {
+  background-color: transparent;
 }
