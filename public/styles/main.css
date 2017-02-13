@@ -132,7 +132,8 @@ body {
 
 .footer {
   display: inline-block;
-  margin-left: 27%;
+  margin-left: 28%;
+  margin-top: 2%;
 }
 
 .page_footer {
@@ -343,6 +344,40 @@ body {
     100% {
         margin-left:50px;
     }
+}
+
+@keyframes blink {
+  78% {
+    color: #ff99ff;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #ff99ff;
+  }
+  80% {
+
+    text-shadow: none;
+  }
+  81% {
+    color: #ff99ff;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #ff99ff;
+    text-shadow: none;
+  }
+  83% {
+    color: #ff99ff;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #ff99ff;
+    text-shadow: none;
+  }
+  92.5% {
+    color: #ff99ff;
+    text-shadow: inherit;
+  }
 }
 
 /* ANIMATIONS */
@@ -579,12 +614,12 @@ body {
   margin-top: 20%;
   margin-right: 30%;
   margin-bottom: 10%;
-  color: pink;
+  color: #00FF7F;
   font-weight: bold;
+  animation: blink linear infinite 5s;
 }
 
 .words_list {
-  list-style-position: outside;
   list-style: none;
   text-align: center;
 }
