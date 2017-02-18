@@ -79,7 +79,7 @@ body {
 .button {
   float:right;
 	padding: 11px 25px;
-  width: 50px;
+  width: 80px;
 	font-family: serif;
 	font-weight: 300;
 	font-size: 18px;
@@ -288,6 +288,7 @@ body {
 	right: 0;
 	top: 0;
 	z-index: -1;
+  pointer-events: none;
 }
 
 /* KEYFRAMES */
@@ -491,7 +492,7 @@ body {
   	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
   	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
 
-  	left: 90%;
+  	left: 70%;
   	top: 50%;
 
   	-webkit-transform: scale(0.6);
@@ -579,6 +580,7 @@ body {
     height: 200px;
   	position: absolute;
   	width: 200px;
+    pointer-events: all;
 }
 
 .bubble:after {
@@ -614,9 +616,10 @@ body {
   margin-top: 20%;
   margin-right: 30%;
   margin-bottom: 10%;
-  color: #00FF7F;
+    color: #00FF7F;
   font-weight: bold;
   animation: blink linear infinite 5s;
+  pointer-events: none;
 }
 
 .words_list {
@@ -626,4 +629,14 @@ body {
 
 .words_input_box {
   background-color: transparent;
+}
+
+.returnedWord {
+  text-align: center;
+  font-family: sans-serif;
+  color: #00FF7F;
+  font-weight: bold;
+  animation: blink linear infinite 3s;
+
+
 }

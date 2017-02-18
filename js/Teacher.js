@@ -3,17 +3,24 @@ import { Link } from 'react-router'
 
 export default React.createClass({
   getInitialState(){
-    return{
-      words: []
+    return {
+      currentWord: ""
     }
   },
-  onFormChange(e) {
-    var newWord = e.target.value
-  },
-  onWordSubmit(){
+
+  onFormChange(e){
+    var currentWord = e.target.value
     this.setState({
-      words: newWord
+      currentWord: currentWord
     })
+    console.log(currentWord)
+  },
+
+  onWordSubmit(e){
+    e.preventDefault()
+    this.props.onWordSubmit(this.state.currentWord)
+
+    console.log(this.props.words)
   },
   render() {
     return (
@@ -34,32 +41,23 @@ export default React.createClass({
                 method="post">
             <div className="header">
               <h1>Word Input Form</h1>
-              <span>Teachers enter list of words <br /> this grade level struggles with most.
+              <span>Enter Your Class's Spelling <br /> list for the Week.
               </span>
             </div>
             <div className="content">
-              <form>
-                <input  ref= "wordInput" onChange={this.onFormChange}
-                  className="input_username"
-                  name="teacher words"
-                  placeholder="Input words"
-                  type="text"/>
-
-                <ul>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                  <li className="words_list"><input className="words_input_box"/></li>
-                </ul>
-
-
+              <form onSubmit={this.onWordSubmit}>
+                <input onChange={ this.onFormChange } ref= "words" className="input_username" name="words" placeholder="Enter Words" type="text"/>
+                <input className="addButton" onClick={ this.onWordSubmit } type="submit" value="Add Word"/>
               </form>
+              <article className="wordsDiv">
+                {
+                  this.props.words.map((word, i)=>{
+                    return(
+                      <p className="returnedWord">{word}</p>
+                    )
+                  })
+                }
+              </article>
               <div
                 className="pass_icon">
               </div>

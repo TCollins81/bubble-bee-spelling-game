@@ -21,15 +21,15 @@ export default React.createClass({
                     action=""
                     method="post">
                 <div className="header">
-                  <h1>Login Form</h1>
-                  <span>Fill out the form below to login
+                  <h1>ENTER LOGIN ID</h1>
+                  <span>Register for new LoginID
                   </span>
                 </div>
                 <div className="content">
                   <input
                     className="input_username"
                     name="username"
-                    placeholder="Username"
+                    placeholder="LoginID"
                     type="text"/>
                   <div className="user_icon">
                     </div>
@@ -51,7 +51,7 @@ export default React.createClass({
                       <input
                         className="button"
                         name="submit"
-                        value="Login"
+                        value="Play Game"
                         type="text"/>
                     </Link>
                     <Link to="/register"
