@@ -8,6 +8,7 @@ export default React.createClass({
     }
   },
 
+
   onFormChange(e){
     var currentWord = e.target.value
     this.setState({
@@ -19,7 +20,6 @@ export default React.createClass({
   onWordSubmit(e){
     e.preventDefault()
     this.props.onWordSubmit(this.state.currentWord)
-
     console.log(this.props.words)
   },
   render() {
@@ -62,17 +62,12 @@ export default React.createClass({
                 className="pass_icon">
               </div>
             </div>
-
             <div className="footer">
-
-
-
-              <Link to="/game"
+              <Link to={`${this.props.words}/game`}
                   className="teachers-unite"
                   name="submit"
                   value="Register"
                   type="submit">PLAY GAME</Link>
-
             </div>
           </div>
         </section>

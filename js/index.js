@@ -14,7 +14,7 @@ render(
         <Route path="/" component={ Home }/>
         <Route path="/register" component={ Register } />
         <Route path="/teacher" component={ Teacher }/>
-        <Route path="/game" component={ Game }/>
+        <Route path="/:words/game" component={ Game }/>
       </Route>
     </Router>
   ),

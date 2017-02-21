@@ -348,34 +348,34 @@ body {
 
 @keyframes blink {
   78% {
-    color: #ff99ff;
+    color: #ff00ff;
     text-shadow: inherit;
   }
   79%{
-     color: #ff99ff;
+     color: #ff00ff;
   }
   80% {
 
     text-shadow: none;
   }
   81% {
-    color: #ff99ff;
+    color: #ff00ff;
     text-shadow: inherit;
   }
   82% {
-    color: #ff99ff;
+    color: #ff00ff;
     text-shadow: none;
   }
   83% {
-    color: #ff99ff;
+    color: #ff00ff;
     text-shadow: inherit;
   }
   92% {
-    color: #ff99ff;
+    color: #ff00ff;
     text-shadow: none;
   }
   92.5% {
-    color: #ff99ff;
+    color: #ff00ff;
     text-shadow: inherit;
   }
 }
@@ -615,10 +615,50 @@ body {
   margin-top: 20%;
   margin-right: 30%;
   margin-bottom: 10%;
-    color: #00FF7F;
+  color: #00FF7F;
   font-weight: bold;
   animation: blink linear infinite 5s;
   pointer-events: none;
+}
+.main{
+  position: relative;
+}
+.letterDisplay {
+  font-size: 3em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.letterHint {
+  font-size: 3em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+  -moz-animation: cssAnimation 0s ease-in 5s forwards;
+  -o-animation: cssAnimation 0s ease-in 5s forwards;
+  animation: cssAnimation 0s ease-in 5s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+  to {
+  width:0;
+  height:0;
+  overflow:hidden;
+  }
+}
+@-webkit-keyframes cssAnimation {
+  to {
+  width:0;
+  height:0;
+  visibility:hidden;
+  }
 }
 
 .words_list {
@@ -669,7 +709,6 @@ body {
 
 .back-button {
     padding: 11px 25px;
-    width: 50px;
     font-family: serif;
     font-weight: 300;
     font-size: 18px;
@@ -684,4 +723,18 @@ body {
     float: right;
     margin-top: 30%;
     margin-right: 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.correct {
+  font-size: 4em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: red;
 }
