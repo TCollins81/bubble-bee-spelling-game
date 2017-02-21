@@ -47,13 +47,13 @@ export default React.createClass({
             <div className="content">
               <form onSubmit={this.onWordSubmit}>
                 <input onChange={ this.onFormChange } ref= "words" className="input_username" name="words" placeholder="Enter Words" type="text"/>
-                <input className="addButton" onClick={ this.onWordSubmit } type="submit" value="Add Word"/>
+                <input className="addButton" onClick={ this.onWordSubmit } type="submit" value="+"/>
               </form>
               <article className="wordsDiv">
                 {
                   this.props.words.map((word, i)=>{
                     return(
-                      <p className="returnedWord">{word}</p>
+                      <p key={i} className="returnedWord">{word}</p>
                     )
                   })
                 }
