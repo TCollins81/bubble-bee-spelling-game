@@ -58,7 +58,6 @@ export default React.createClass({
       console.log(clickedLetters);
       console.log(this.state.correctWordBubbles);
       if (this.state.correctWordBubbles.join('') === clickedLetters.join('')) {
-        // AKA: whole word guessed
         this.refs.correct.className="correct"
         this.refs.letterDisplay.className="hidden"
       }
@@ -89,7 +88,7 @@ export default React.createClass({
             <div>
               <h2 className="letterHint">{this.state.currentWord}</h2>
               <h2 className="letterDisplay" ref="letterDisplay">{this.state.clickedLetters}</h2>
-              <h2 className="hidden" ref="correct">CORRECT!</h2>
+              <h2 className="hidden" ref="correct">CORRECT! </h2>
             </div>
             <div>
               <div className="cloud x1"></div>

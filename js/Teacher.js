@@ -13,6 +13,7 @@ export default React.createClass({
     var currentWord = e.target.value
     this.setState({
       currentWord: currentWord
+
     })
     console.log(currentWord)
   },
@@ -20,6 +21,7 @@ export default React.createClass({
   onWordSubmit(e){
     e.preventDefault()
     this.props.onWordSubmit(this.state.currentWord)
+
     console.log(this.props.words)
   },
   render() {
@@ -40,12 +42,12 @@ export default React.createClass({
                 action=""
                 method="post">
             <div className="header">
-              <span>ENTER A LIST OF WORDS <br /> FOR GAME
+              <span>ENTER A LIST OF WORDS FOR GAME BELOW
               </span>
             </div>
             <div className="content">
               <form onSubmit={this.onWordSubmit}>
-                <input onChange={ this.onFormChange } ref= "words" className="input_username" name="words" placeholder="Enter Words" type="text"/>
+                <input onChange={ this.onFormChange } ref= "words" className="input_username" name="words" placeholder="Enter Words Here" type="text"/>
                 <input className="addButton" onClick={ this.onWordSubmit } type="submit" value="add"/>
               </form>
 
