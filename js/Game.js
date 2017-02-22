@@ -90,13 +90,7 @@ export default React.createClass({
               <h2 className="letterDisplay" ref="letterDisplay">{this.state.clickedLetters}</h2>
               <h2 className="hidden" ref="correct">CORRECT! </h2>
             </div>
-            <div>
-              <div className="cloud x1"></div>
-              <div className="cloud x2"></div>
-              <div className="cloud x3"></div>
-              <div className="cloud x4"></div>
-              <div className="cloud x5"></div>
-            </div>
+
 
 
               <Link to="/teacher"
