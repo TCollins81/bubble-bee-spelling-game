@@ -10,7 +10,7 @@
 
 .enter-words-Image{
   margin-bottom: -260px;
-  margin-left: 95px;
+  margin-left: 11%;
 }
 
 *{ margin: 0; padding: 0;}
@@ -608,7 +608,7 @@ body {
 
 .letter {
   text-align: center;
-  font-size: 9em;
+  font-size: 8em;
   position: absolute;
   z-index: 2;
   margin-left: 27%;
@@ -645,6 +645,42 @@ body {
   animation: cssAnimation 0s ease-in 5s forwards;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  font-family: sans-serif;
+}
+  @keyframes blink {
+    78% {
+      color: #ff00ff;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #ff00ff;
+    }
+    80% {
+
+      text-shadow: none;
+    }
+    81% {
+      color: #ff00ff;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #ff00ff;
+      text-shadow: none;
+    }
+    83% {
+      color: #ff00ff;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #ff00ff;
+      text-shadow: none;
+    }
+    92.5% {
+      color: #ff00ff;
+      text-shadow: inherit;
+    }
+  }
+
 }
 @keyframes cssAnimation {
   to {
@@ -718,9 +754,8 @@ body {
     background: #56c2e1;
     border: 1px solid #46b3d3;
     border-radius: 5px;
-    margin-left: 70px;
+    margin-left: 350px;
     text-decoration: none;
-    float: right;
     margin-top: 30%;
     margin-right: 5%;
 }
@@ -730,11 +765,12 @@ body {
 }
 
 .correct {
-  font-size: 4em;
+  font-size: 6em;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: red;
+  color: #00ff00;
+  animation: blink linear infinite 3s;
 }

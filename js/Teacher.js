@@ -25,7 +25,7 @@ export default React.createClass({
   render() {
     return (
       <div id="clouds">
-        <img src="styles/enter-words.png" alt="" className="enter-words-Image"/>
+        <img src="styles/Bubble-Bee.png" alt="" className="enter-words-Image"/>
         <div className="cloud x1"></div>
         <div className="cloud x2"></div>
         <div className="cloud x3"></div>
@@ -40,15 +40,15 @@ export default React.createClass({
                 action=""
                 method="post">
             <div className="header">
-              <h1>Word Input Form</h1>
-              <span>Enter Your Class's Spelling <br /> list for the Week.
+              <span>ENTER A LIST OF WORDS <br /> FOR GAME
               </span>
             </div>
             <div className="content">
               <form onSubmit={this.onWordSubmit}>
                 <input onChange={ this.onFormChange } ref= "words" className="input_username" name="words" placeholder="Enter Words" type="text"/>
-                <input className="addButton" onClick={ this.onWordSubmit } type="submit" value="+"/>
+                <input className="addButton" onClick={ this.onWordSubmit } type="submit" value="add"/>
               </form>
+
               <article className="wordsDiv">
                 {
                   this.props.words.map((word, i)=>{
