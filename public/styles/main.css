@@ -10,7 +10,7 @@
 
 .enter-words-Image{
   margin-bottom: -16.5em;
-  margin-left: 11%;
+  width: 100%;
 }
 
 *{ margin: 0; padding: 0;}
@@ -745,12 +745,13 @@ body {
 }
 
 .addButton {
-  margin-left: -15%;
-  border-radius: 16px;
-  width: 5%;
+  margin-left: -13%;
+  border-radius: 7px;
+  width: 10%;
   font-weight: bold;
   background-color: #56c2e1;
   color: white;
+  height: 28px;
 }
 
 .returnedWord {
