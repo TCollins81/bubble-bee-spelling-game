@@ -33,7 +33,6 @@ export default React.createClass({
         <div className="cloud x3"></div>
         <div className="cloud x4"></div>
         <div className="cloud x5"></div>
-
       <div>
         <section id="login_wrapper">
           <div
@@ -74,6 +73,7 @@ export default React.createClass({
           </div>
         </section>
       </div>
+
     </div>
 
     )

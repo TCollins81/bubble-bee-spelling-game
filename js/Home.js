@@ -43,7 +43,7 @@ export default React.createClass({
                   </div>
                 </div>
                 <div className="footer">
-                    <Link to="/game"
+                    <Link to="/teacher"
                           className="#"
                           name="#"
                           value="#"
@@ -64,6 +64,8 @@ export default React.createClass({
               </form>
             </section>
           </div>
+
+
       </div>
     )
   }
